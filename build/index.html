@@ -19,17 +19,32 @@
             <!--Hamburger wrapper-->
             <div>
                 <!--Hamburger button-->
-                <button id="open-btn" class="text-3xl sm:hidden focus:outline-none">
+                <button id="hamburger-btn" class="text-3xl md:hidden cursor-pointer">
                     &#9776;
                 </button>
                 <!--Main Navbar-->
-                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <!--Nav items-->
                     <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
                     <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
                     <a href="#contact" class="hover:opacity-90">Contact Us</a>
                 </nav>
             </div>
+         </section>
+         <!--Mobile Menu -->
+         <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+            <!--Close Mobile Menu Button-->
+            <button class="text-8xl self-end px-6">
+                &times;
+            </button>
+            <!--Mobile Nav-->
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile menu">
+                <a href="#hero" class="w-full py-6 hover:opacity-90 text-center">Home</a>
+                <a href="#rockets" class="w-full py-6 hover:opacity-90 text-center">Our Rockets</a>
+                <a href="#testimonials" class="w-full py-6 hover:opacity-90 text-center">Testimonials</a>
+                <a href="#contact" class="w-full py-6 hover:opacity-90 text-center">Contact Us</a>
+                <a href="#footer" class="w-full py-6 hover:opacity-90 text-center">Legal</a>
+            </nav>
          </section>
     </header>
 
@@ -194,5 +209,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
