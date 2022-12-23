@@ -91,7 +91,7 @@
 
 
         <!--Testimonials-->
-        <section id="testimonials" class="p-6 my-12">
+        <section id="testimonials" class="p-6 my-12 scroll-m-20">
             <!--Testimonial Section Header-->
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Testimonials
@@ -142,18 +142,26 @@
                 <!---end of Testimonial Section-->
                 <hr class="w-1/2 mx-auto bg-black dark:bg-white ">
 
-
-
-        <section id="contact" class="p-6 my-12">
-            <!--Rockets Section Header-->
+        <!--Contact Section-->
+        <section id="contact" class="p-6 my-12 scroll-m-20">
+            <!--Contact Heading-->
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Contact Us
             </h2>
+            <!--Contact Form-->
+            <form action="" method="post" class="max-w-4xl gap-4 items-left mx-auto text-2xl sm:text-3xl flex flex-col">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" minlength="5" placeholder="Your Subject" class="w-full dark:focus:outline-none text-black text-2xl  p-3 rounded-xl border border-solid border-slate-900 dark:border-none" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"  class="resize-none w-full dark:focus:outline-none text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none" required>
+                </textarea>
+                <button class="mx-auto bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
+                    Submit
+                </button>
+            </form>
         </section>
         <!---End of Contact Section-->
         <hr class="w-1/2 mx-auto bg-black dark:bg-white ">
-
-
     </main>
 </body>
 </html>
