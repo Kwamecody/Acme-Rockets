@@ -36,7 +36,7 @@
     <!--Main content-->
     <main class="mx-auto max-w-4xl">
         <!-- Hero Section-->
-        <section id="hero" class="scroll-m-40 flex flex-col-reverse justify-center items-center p-6 gap-8 mb-12 sm:flex-row">
+        <section id="hero" class="scroll-m-40 flex flex-col-reverse justify-center items-center p-6 gap-8 mb-12 sm:flex-row widescreen:section-min-height tallscreen::section-min-height">
             <!--Left Hero Item-->
             <article class="sm:w-1/2">
                 <!--Hero H2 -->
@@ -56,7 +56,7 @@
 
 
         <!--Rockets Section-->
-        <section id="rockets" class="p-6 my-12 scroll-m-20">
+        <section id="rockets" class="p-6 my-12 scroll-m-20 widescreen:section-min-height tallscreen::section-min-height">
             <!--Rockets Section Header-->
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Our Rockets
@@ -91,7 +91,7 @@
 
 
         <!--Testimonials-->
-        <section id="testimonials" class="p-6 my-12 scroll-m-20">
+        <section id="testimonials" class="p-6 my-12 scroll-m-20 widescreen:section-min-height tallscreen::section-min-height">
             <!--Testimonial Section Header-->
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Testimonials
@@ -143,7 +143,7 @@
                 <hr class="w-1/2 mx-auto bg-black dark:bg-white ">
 
         <!--Contact Section-->
-        <section id="contact" class="p-6 my-12 scroll-m-20">
+        <section id="contact" class="p-6 my-12 scroll-m-20 widescreen:section-min-height tallscreen::section-min-height">
             <!--Contact Heading-->
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Contact Us
@@ -153,7 +153,7 @@
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" minlength="5" placeholder="Your Subject" class="w-full dark:focus:outline-none text-black text-2xl  p-3 rounded-xl border border-solid border-slate-900 dark:border-none" required>
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"  class="resize-none w-full dark:focus:outline-none text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none" required>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"  class="w-full dark:focus:outline-none text-black text-2xl  p-3 rounded-xl border border-solid border-slate-900 dark:border-none" required>
                 </textarea>
                 <button class="mx-auto bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
                     Submit
@@ -163,5 +163,36 @@
         <!---End of Contact Section-->
         <hr class="w-1/2 mx-auto bg-black dark:bg-white ">
     </main>
+
+    <!--Footer -->
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+        <section class="flex flex-col mx-auto max-w-4xl p-4 sm:flex-row sm:justify-between">
+            <!--Address-->
+            <address>
+                <h2>Acme Rocket-Powered Products, Inc.</h2>
+                555 Astro Way<br />
+                Fairfield, New Jersey 12345-5555<br />
+                Email:
+                <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a
+                ><br />
+                Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+            </address>
+
+            <!---Footer Nav-->
+            <nav class="hidden md:flex md:flex-col gap-2" aria-label="footer">
+                <!--Links-->
+                <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+                <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                <a href="#contact" class="hover:opacity-90">Contact Us</a>
+                <a href="#hero" class="hover:opacity-90">Top Menu</a>
+            </nav>
+
+            <!--Right footer items-->
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
+                <p class="text-right">All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
