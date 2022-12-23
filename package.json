@@ -1,0 +1,24 @@
+{
+  "name": "ache-rockets",
+  "version": "1.0.0",
+  "description": "Acme Rockets Website Clone",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier" : "npx prettier --write **/*.html" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kwamecody/Ache-Rockets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kwamecody/Ache-Rockets/issues"
+  },
+  "homepage": "https://github.com/Kwamecody/Ache-Rockets#readme",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.2.1"
+  }
+}
