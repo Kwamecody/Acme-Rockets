@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Ache Rocket Website</title>
+    <title> 🚀 Ache Rocket Website</title>
 </head>
-<body>
-    
+<body class="bg-slate-50 dark:bg-black dark:text-white min-h-screen">
+    <!---Header -->
+    <header class="bg-teal-700 text-white sticky top-0 z-10">
+         <!--Hero section-->
+         <section class="flex justify-between p-4 items-center max-w-4xl mx-auto">
+            <!--Main Page Header-->
+            <h1 class="text-3xl font-medium">
+               <a href="#hero">🚀 Acme Rockets</a> 
+            </h1>
+            <!--Hamburger wrapper-->
+            <div>
+                <!--Hamburger button-->
+                <button id="open-btn" class="text-3xl sm:hidden focus:outline-none">
+                    &#9776;
+                </button>
+                <!--Main Navbar-->
+                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                    <!--Nav items-->
+                    <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+                    <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                    <a href="#contact" class="hover:opacity-90">Contact Us</a>
+                </nav>
+            </div>
+         </section>
+    </header>
+
+    <!--Main-->
 </body>
 </html>
